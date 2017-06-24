@@ -17,8 +17,7 @@
 /**
  * This file contains the version information for the comments feedback plugin
  *
- * @package   assignfeedback_comments
- * @copyright 2012 NetSpot {@link http://www.netspot.com.au}
+ * @package   assignfeedback_gradetracker
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
