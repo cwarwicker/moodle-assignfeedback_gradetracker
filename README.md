@@ -1,4 +1,4 @@
-# moodle-mod_assign_feedback_gradetracker
+# moodle-assignfeedback_gradetracker
 
 This plugin provides a Grade Tracker feedback type for the standard Moodle "assign" module. It works together with the Grade Tracker block and allows you to update any Grade Tracker criteria linked to an assignment, whilst grading the assignment.
 
