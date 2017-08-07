@@ -2,7 +2,7 @@
 
 This plugin provides a Grade Tracker feedback type for the standard Moodle "assign" module. It works together with the Grade Tracker block and allows you to update any Grade Tracker criteria linked to an assignment, whilst grading the assignment.
 
-If you wish to also have the functionality to create the links between criteria and an assignment, whilst creating/editing the assignment, that can be achieved by adding in a few lines of code changes to your assign module. See [here](http://moodleportal.bedford.ac.uk/mod/page/view.php?id=90) for more information.
+If you wish to also have the functionality to create the links between criteria and an assignment, whilst creating/editing the assignment, that can be achieved by adding in a few lines of code changes to your assign module. See [here](https://github.com/cwarwicker/moodle-block_gradetracker/wiki/Activity-Links-Core-Changes) for more information.
 
 Requirements
 ------------
