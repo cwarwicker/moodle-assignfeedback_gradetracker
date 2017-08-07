@@ -11,8 +11,11 @@ Requirements
 
 Installation
 ------------
-Just install the plugin in the /mod/assign/feedback directory and run through the normal plugin installation procedure.
-You may then need to enable the feedback type, in Site Admin -> Plugins -> Activity Modules -> Assignment -> Feedback Plugins
+- Download the zip file, using the green "Clone or download" button
+- Extract the files 
+- Rename the folder inside "moodle-assignfeedback_gradetracker-master" to just "gradetracker".
+- Place the "gradetracker" folder inside the /mod/assign/feedback directory of your Moodle site and run through the normal plugin installation procedure.
+- You may then need to enable the feedback type, in Site Admin -> Plugins -> Activity Modules -> Assignment -> Feedback Plugins
 
 Licence
 ------------
