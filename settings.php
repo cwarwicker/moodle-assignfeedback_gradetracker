@@ -21,5 +21,7 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-
+ $settings->add(new admin_setting_configcheckbox('assignfeedback_gradetracker/default',
+                    new lang_string('default', 'assignfeedback_gradetracker'),
+                    new lang_string('default_help', 'assignfeedback_gradetracker'), 0));
 

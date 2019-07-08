@@ -25,3 +25,5 @@
 $string['pluginname'] = 'Grade Tracker Feedback';
 $string['enabled'] = 'Enabled';
 $string['enabled_help'] = 'If enabled, the marker can update the Grade Tracker criteria that are linked to the assignment, from the submission grading screen.';
+$string['default'] = 'Enabled by default';
+$string['default_help'] = 'If set, this feedback method will be enabled by default for all new assignments.';
