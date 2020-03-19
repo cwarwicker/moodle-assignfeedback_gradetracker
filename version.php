@@ -23,9 +23,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2015061700;
-$plugin->requires  = 2013111800;
+$plugin->version   = 2020031900;
+$plugin->requires  = 2017111300;
 $plugin->component = 'assignfeedback_gradetracker';
 $plugin->dependencies = array(
-    'block_gradetracker' => ANY_VERSION
+    'block_gradetracker' => 2020031900
 );
