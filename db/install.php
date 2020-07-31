@@ -13,13 +13,13 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-
 /**
- * Post-install code for the feedback_comments module.
+ * Install script for plugin
  *
- * @package   assignfeedback_comments
- * @copyright 2016 Bedford College
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @copyright   2019 onwards Conn Warwicker
+ * @package     assignfeedback_gradetracker
+ * @version     1.0
+ * @author      Conn Warwicker <conn@cmrwarwicker.com>
  */
 
 defined('MOODLE_INTERNAL') || die();

@@ -13,12 +13,13 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-
 /**
- * This file contains the version information for the comments feedback plugin
+ * Plugin version
  *
- * @package   assignfeedback_gradetracker
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @copyright   2019 onwards Conn Warwicker
+ * @package     assignfeedback_gradetracker
+ * @version     1.0
+ * @author      Conn Warwicker <conn@cmrwarwicker.com>
  */
 
 defined('MOODLE_INTERNAL') || die();

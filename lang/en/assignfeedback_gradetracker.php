@@ -13,14 +13,16 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-
 /**
- * Strings for component 'assignfeedback_gradetracker', language 'en'
+ * Language strings
  *
- * @package   assignfeedback_gradetracker
- * @copyright 2016 Bedford College
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @copyright   2019 onwards Conn Warwicker
+ * @package     assignfeedback_gradetracker
+ * @version     1.0
+ * @author      Conn Warwicker <conn@cmrwarwicker.com>
  */
+
+defined('MOODLE_INTERNAL') or die();
 
 $string['pluginname'] = 'Grade Tracker Feedback';
 $string['enabled'] = 'Enabled';

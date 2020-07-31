@@ -13,15 +13,18 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-
 /**
- * This file defines the admin settings for this plugin
+ * Plugin settings
  *
- * @package   assignfeedback_gradetracker
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @copyright   2019 onwards Conn Warwicker
+ * @package     assignfeedback_gradetracker
+ * @version     1.0
+ * @author      Conn Warwicker <conn@cmrwarwicker.com>
  */
 
- $settings->add(new admin_setting_configcheckbox('assignfeedback_gradetracker/default',
-                    new lang_string('default', 'assignfeedback_gradetracker'),
-                    new lang_string('default_help', 'assignfeedback_gradetracker'), 0));
+defined('MOODLE_INTERNAL') or die();
+
+$settings->add(new admin_setting_configcheckbox('assignfeedback_gradetracker/default',
+                new lang_string('default', 'assignfeedback_gradetracker'),
+                new lang_string('default_help', 'assignfeedback_gradetracker'), 0));
 
