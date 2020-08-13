@@ -80,7 +80,7 @@ class assign_feedback_gradetracker extends assign_feedback_plugin {
 
         global $USER;
 
-        $User = new \GT\User($USER->id);
+        $User = new \block_gradetracker\User($USER->id);
         $userID = $grade->userid;
 
         // Can't get it from the POST anymore, Moodle 3.1 doesn't submit the grading in the post.
@@ -102,7 +102,7 @@ class assign_feedback_gradetracker extends assign_feedback_plugin {
 
         foreach ($criteria as $qualID => $units) {
 
-            $qual = new \GT\Qualification\UserQualification($qualID);
+            $qual = new \block_gradetracker\Qualification\UserQualification($qualID);
             if ($qual->isValid()) {
 
                 $qual->loadStudent($userID);
@@ -127,7 +127,7 @@ class assign_feedback_gradetracker extends assign_feedback_plugin {
                             $criterion = $unit->getCriterion($critID);
                             if ($criterion) {
 
-                                $award = new \GT\CriteriaAward($value);
+                                $award = new \block_gradetracker\CriteriaAward($value);
                                 $criterion->setUserAward($award);
 
                                 if (isset($args['gt_criteria_comments'][$qualID][$unitID][$critID])) {
@@ -171,15 +171,15 @@ class assign_feedback_gradetracker extends assign_feedback_plugin {
             return false;
         }
 
-        $User = new \GT\User($USER->id);
+        $User = new \block_gradetracker\User($USER->id);
 
         require_once($CFG->dirroot . '/blocks/gradetracker/lib.php');
 
-        $quals = \GT\Activity::getQualsLinkedToCourseModule( $this->assignment->get_course_module()->id );
+        $quals = \block_gradetracker\Activity::getQualsLinkedToCourseModule( $this->assignment->get_course_module()->id );
         if ($quals) {
             foreach ($quals as $qualID) {
 
-                $qual = new \GT\Qualification\UserQualification($qualID);
+                $qual = new \block_gradetracker\Qualification\UserQualification($qualID);
                 $qual->loadStudent( $userid );
 
                 // Is the user actually on this qual?
@@ -189,7 +189,7 @@ class assign_feedback_gradetracker extends assign_feedback_plugin {
 
                 $mform->addElement('html', '<a href="'.$CFG->wwwroot.'/blocks/gradetracker/grid.php?type=student&id='.$userid.'&qualID='.$qual->getID().'" target="_blank">'.$qual->getDisplayName().'</a><br>');
 
-                $units = \GT\Activity::getUnitsLinkedToCourseModule($this->assignment->get_course_module()->id, $qual->getID());
+                $units = \block_gradetracker\Activity::getUnitsLinkedToCourseModule($this->assignment->get_course_module()->id, $qual->getID());
                 if ($units) {
 
                     foreach ($units as $unitID) {
@@ -210,7 +210,7 @@ class assign_feedback_gradetracker extends assign_feedback_plugin {
                         $mform->addElement('html', '<i>'.$unit->getDisplayName() . '</i><br>');
 
                         // Criteria
-                        $criteria = \GT\Activity::getCriteriaLinkedToCourseModule($this->assignment->get_course_module()->id, false, $qual->getID(), $unit, true);
+                        $criteria = \block_gradetracker\Activity::getCriteriaLinkedToCourseModule($this->assignment->get_course_module()->id, false, $qual->getID(), $unit, true);
                         if ($criteria) {
 
                             $table = new html_table();
